@@ -10,7 +10,6 @@ password = os.getenv("GMAIL_PASS")
 sender_email = os.getenv("SENDER")
 receiver_emails = os.getenv("RECEIVER").split(',')
 
-print(receiver_emails)
 # TEST_EMAIL = EmailMessage()
 
 # TST_CONTENT = """
