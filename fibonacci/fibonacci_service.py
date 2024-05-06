@@ -4,6 +4,8 @@ def fibonacci_gen(seed1,seed2):
     """
     Fibonacci type sequence generator for 2 given seeds. X and Y
     """
+    if seed1> seed2:
+        seed1, seed2 = seed2, seed1
     while True:
         yield seed1
         seed1, seed2 = seed2, seed1+seed2

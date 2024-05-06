@@ -28,3 +28,12 @@ class TestFibonacciGen(unittest.TestCase):
                      225851433717, 365435296162, 591286729879, 956722026041]
     
         self.assertEqual(result, correct)
+
+    def test_bigger_first(self):
+        """Test to check the last digits are ordered when the minute has a bigger first digit
+        """
+        generator = fibonacci_gen(4,1)
+        result = [next(generator) for _ in range(4)]
+        correct = [1,4,5,9]
+
+        self.assertEqual(result, correct)
